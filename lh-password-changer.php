@@ -3,7 +3,7 @@
 Plugin Name: LH Password Changer
 Plugin URI: http://lhero.org/plugins/lh-password-changer/
 Description: Front end change password form
-Version: 1.0
+Version: 1.01
 Author: Peter Shaw
 Author URI: http://shawfactor.com/
 */
@@ -201,15 +201,15 @@ $options  = get_option($this->opt_name);
 }
 
 
-echo "<h2>" . __( 'LH Password Changer Settings', 'lh-password-changer' ) . "</h2>";
+echo "<h1>" . __( 'LH Password Changer Settings', 'lh-password-changer' ) . "</h1>";
 
 ?>
 
 
 <form name="lh_password_changer-admin_form" id="lh_password_changer-admin_form" method="post" action="">
 <input type="hidden" name="<?php echo $lh_password_changer_hidden_field_name; ?>" value="Y">
-<p><?php _e("Password Change Page Id;", 'menu-test' ); ?> 
-<input type="number" name="<?php echo $this->page_id_field; ?>" id="<?php echo $this->page_id_field; ?>" value="<?php echo $options[ $this->page_id_field ]; ?>" size="10" />
+<p><label for="<?php echo $this->page_id_field; ?>"><?php _e("Password Change Page Id;", 'menu-test' ); ?></label> 
+<input type="number" name="<?php echo $this->page_id_field; ?>" id="<?php echo $this->page_id_field; ?>" value="<?php echo $options[ $this->page_id_field ]; ?>" size="10" /><a href="<?php echo get_permalink($options[ $this->page_id_field ]); ?>">Link</a>
 </p>
 
 <p class="submit">

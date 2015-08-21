@@ -3,7 +3,7 @@ Contributors: shawfactor
 Donate link: http://lhero.org/plugins/lh-password-changer/
 Tags: login, logon, password, passwords, front-end, frontend
 Requires at least: 3.0
-Tested up to: 4.2
+Tested up to: 4.3
 Stable tag: trunk
 
 LH Password Changer is a WordPress plugin that enables users to change their password on the front end.
@@ -27,3 +27,7 @@ Install using WordPress:
 
 **1.0 June 12, 2015**  
 Initial release.
+
+
+**1.01 Augusr 12, 2015**  
+Menu Improvement
